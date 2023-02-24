@@ -1,0 +1,18 @@
+spring:
+  h2.console:
+    enabled: true
+    path: '/console'
+  datasource:
+    url: 'jdbc:h2:file:D:/PRACA_AAAAAAAA/NAUKA_WAZNE/CinemaManagementApp/CinemaManagementApp/CinemaManagementApp/cinemabase'
+    user: 'sa'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+#keycloak:
+#  auth-server-url: 'http://localhost:8180/'
+#  realm: 'Cinema-Management-App'
+#  resource: 'cinema-management-client'
+#  public-client: true
+
+
