@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: cinema-app-ingress
-  namespace: default
+  namespace: cinema-app
   annotations:
     traefik.ingress.kubernetes.io/router.middlewares: default-strip-api@kubernetescrd
 spec:
