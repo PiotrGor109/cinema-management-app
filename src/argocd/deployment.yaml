@@ -15,8 +15,9 @@ spec:
     spec:
       containers:
       - name: cinema-app
-        image: harbor.local/library/cinema-app:1
+        image: harbor.local/library/cinema-app:2
         ports:
         - containerPort: 8080
       imagePullSecrets:
       - name: harbor-secret
+
