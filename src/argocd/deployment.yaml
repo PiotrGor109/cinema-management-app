@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cinema-app
+  namespace: cinema-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cinema-app
+  template:
+    metadata:
+      labels:
+        app: cinema-app
+    spec:
+      containers:
+      - name: cinema-app
+        image: harbor.local/library/cinema-app:1
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: harbor-secret
